@@ -1,4 +1,4 @@
-const medtehnika = document.querySelector('.medtehnika');
+
 
 const medtehnika1 = {
     name: 'inhaler',
@@ -21,26 +21,31 @@ const medtehnika3 = {
 
 
 function medtehnikaOl(medtehnikaName, medtehnikaObj) {
-    const tehnika = createElement('div', medtehnikaName);
-    const card = createElement('div', 'card');
-    const name = createElement('div', 'name');
-    const price = createElement('div', 'price');
-    const img = createElement('img');
+    const medtehnika = document.createElement('div');
+    medtehnika.classList.add(medtehnikaName);
+    const card = document.createElement('div');
+    card.classList.add('card');
+    const name = document.createElement('div');
+    name.classList.add('name');
+    const price = document.createElement('div',);
+    price.classList.add('price');
+    const img = document.createElement('img');
+    img.classList.add('img');
+
 
     name.innerText = medtehnikaObj.name;
     price.innerText = medtehnikaObj.price;
     img.src = medtehnikaObj.img;
 
-    tehnika.appendChild('card');
-    card.appendChild('card');
-    name.appendChild('name');
-    price.appendChild('price');
-    img.appendChild('img');
-
-    return tehnika;
+    medtehnika.appendChild(card);
+    card.appendChild(name);
+    card.appendChild(price);
+    card.appendChild(img);
     
 
+    const pole = document.querySelector('#pole');
+    pole.appendChild(medtehnika)
+
+
 };
-medtehnika.appendChild('medtehnika1',medtehnika1)
-medtehnika.appendChild(medtehnika2)
-medtehnika.appendChild(medtehnika3)
+medtehnikaOl('medtehnika1',medtehnika1)
