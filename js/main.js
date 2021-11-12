@@ -1,18 +1,18 @@
-
-
-const medtehnika1 = {
+window.onload = function () {
+    
+const medicalEquipment1 = {
     name: 'inhaler',
     price: 100,
     img: src = "https://medmag.ua/image/cache/data/import_yml/178/081/187/681358659_w640_h640_omron_ne_c28p-380x380.jpeg.webp"
         
 };
-const medtehnika2 = {
+const medicalEquipment2 = {
     name: 'tonometer',
     price: 120,
     img:src = "https://medmag.ua/image/cache/catalog/image/tonometr/avtomaticheskie/oromed-oro-n2-basic-380x380.jpg.webp"
     
 };
-const medtehnika3 = {
+const medicalEquipment3 = {
     name: 'glucometer',
     price: 200,
     img:src ="https://medmag.ua/image/cache/catalog/image/glukometr/infopia-element-380x380.png.webp"
@@ -20,32 +20,35 @@ const medtehnika3 = {
 };
 
 
-function medtehnikaOl(medtehnikaName, medtehnikaObj) {
-    const medtehnika = document.createElement('div');
-    medtehnika.classList.add(medtehnikaName);
-    const card = document.createElement('div');
+function medicalEquipmentOl(medicalEquipmentName, medicalEquipmentObj) {
+    var medicalEquipment = document.createElement('div');
+    medicalEquipment.classList.add(medicalEquipmentName);
+    var card = document.createElement('a');
     card.classList.add('card');
-    const name = document.createElement('div');
+    var name = document.createElement('h2');
     name.classList.add('name');
-    const price = document.createElement('div',);
+    var price = document.createElement('p',);
     price.classList.add('price');
-    const img = document.createElement('img');
+    var img = document.createElement('img');
     img.classList.add('img');
 
 
-    name.innerText = medtehnikaObj.name;
-    price.innerText = medtehnikaObj.price;
-    img.src = medtehnikaObj.img;
+    name.innerText = medicalEquipmentObj.name;
+    price.innerText = medicalEquipmentObj.price;
+    img.src = medicalEquipmentObj.img;
 
-    medtehnika.appendChild(card);
+    medicalEquipment.appendChild(card);
     card.appendChild(name);
     card.appendChild(price);
     card.appendChild(img);
     
 
-    const pole = document.querySelector('#pole');
-    pole.appendChild(medtehnika)
+    var pole = document.querySelector('#pole');
+    pole.appendChild(medicalEquipment)
 
 
 };
-medtehnikaOl('medtehnika1',medtehnika1)
+    medicalEquipmentOl('medicalEquipment1', medicalEquipment1)
+    medicalEquipmentOl('medicalEquipment2', medicalEquipment2)
+    medicalEquipmentOl('medicalEquipment3',medicalEquipment3)
+}

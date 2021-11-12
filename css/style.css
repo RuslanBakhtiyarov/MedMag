@@ -1,9 +1,30 @@
+body{
+    color: black;
+    margin: 10px;
+}
+
 .container{
+    max-width: 1200px;
     display: flex;
-    color: aqua;
+    margin: 0;
     
 }
 .pole{
-    display: block;
+    display: flex;
     text-align: center;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+.medicalEquipment1{
+    margin-left: 50px;
+}
+.medicalEquipment2{
+    margin-left: 50px;
+}
+.medicalEquipment3{
+    margin-left: 50px;
+}
+.card{
+    display: block;
+    width: 300px;
 }
