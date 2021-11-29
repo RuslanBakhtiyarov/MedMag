@@ -26,7 +26,8 @@ function medicalEquipmentOl(medicalEquipmentName, medicalEquipmentObj) {
     var cards = document.createElement('div');
     cards.classList.add('cards');
     var card = document.createElement('a');
-    card.classList.add('card')
+    card.href = "./parens.js";
+    card.classList.add('card');
     var name = document.createElement('h2');
     name.classList.add('name');
     var price = document.createElement('p',);
@@ -40,17 +41,15 @@ function medicalEquipmentOl(medicalEquipmentName, medicalEquipmentObj) {
     img.src = medicalEquipmentObj.img;
 
     medicalEquipment.appendChild(card);
+    card.appendChild(img);
     card.appendChild(name);
     card.appendChild(price);
-    card.appendChild(img);
-    
+
 
     var pole = document.querySelector('#pole');
     pole.appendChild(medicalEquipment)
 
 
-    var card = window.location.href;
-    document.getElementById("parens.js").innerHTML = card;
 
 
 };
