@@ -5,7 +5,6 @@ body{
 
 .container{
     max-width: 1200px;
-    display: flex;
     margin: 0;
     
 }
@@ -27,4 +26,8 @@ body{
 .card{
     display: block;
     width: 300px;
+}
+.img{
+    width: 200px;
+    height: 200px;
 }

@@ -1,21 +1,21 @@
 window.onload = function () {
     
-const medicalEquipment1 = {
+var medicalEquipment1 = {
     name: 'inhaler',
     price: 100,
-    img: src = "https://medmag.ua/image/cache/data/import_yml/178/081/187/681358659_w640_h640_omron_ne_c28p-380x380.jpeg.webp"
+    img: src = "./image/ingolyator.webp"
         
 };
-const medicalEquipment2 = {
+var medicalEquipment2 = {
     name: 'tonometer',
     price: 120,
-    img:src = "https://medmag.ua/image/cache/catalog/image/tonometr/avtomaticheskie/oromed-oro-n2-basic-380x380.jpg.webp"
+    img:src = "./image/tonometr.webp"
     
 };
-const medicalEquipment3 = {
+var medicalEquipment3 = {
     name: 'glucometer',
     price: 200,
-    img:src ="https://medmag.ua/image/cache/catalog/image/glukometr/infopia-element-380x380.png.webp"
+    img:src ="./image/Blood glucose meters.webp"
     
 };
 
@@ -23,8 +23,10 @@ const medicalEquipment3 = {
 function medicalEquipmentOl(medicalEquipmentName, medicalEquipmentObj) {
     var medicalEquipment = document.createElement('div');
     medicalEquipment.classList.add(medicalEquipmentName);
+    var cards = document.createElement('div');
+    cards.classList.add('cards');
     var card = document.createElement('a');
-    card.classList.add('card');
+    card.classList.add('card')
     var name = document.createElement('h2');
     name.classList.add('name');
     var price = document.createElement('p',);
@@ -47,8 +49,15 @@ function medicalEquipmentOl(medicalEquipmentName, medicalEquipmentObj) {
     pole.appendChild(medicalEquipment)
 
 
+    var card = window.location.href;
+    document.getElementById("parens.js").innerHTML = card;
+
+
 };
     medicalEquipmentOl('medicalEquipment1', medicalEquipment1)
     medicalEquipmentOl('medicalEquipment2', medicalEquipment2)
-    medicalEquipmentOl('medicalEquipment3',medicalEquipment3)
+    medicalEquipmentOl('medicalEquipment3', medicalEquipment3)
+    
+
+  
 }
