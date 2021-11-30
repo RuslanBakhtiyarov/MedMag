@@ -1,10 +1,10 @@
 var cardParens1 = {
-    name: небулайзер,
+    name: 'небулайзер',
     price:150,
-    img:src = "./image/img(0).jpeg" 
+    img:src = "./image/ingolyator.webp" 
 }
 var cardParens2 = {
-    name: инголятор,
+    name: 'инголятор',
     price:200,
     img:src = "./img/img(1)jpeg"
 }
@@ -18,12 +18,12 @@ function cardIngolyatorOl (cardIngolyatorName,cardIngolyatorObj) {
     name.classList.add('name');
     var price = document.createElement('p');
     price.classList.add('price');
-    var image = document.createElement('img');
-    image.classList.add('img');
+    var img = document.createElement('img');
+    img.classList.add('img');
 
     name.innerText = cardIngolyatorObj.name;
     price.innerText = cardIngolyatorObj.price;
-    image.innerText = cardIngolyatorObj.image;
+    img.innerText = cardIngolyatorObj.img;
 
     cardIngolyator.appendChild(cards);
     cards.appendChild(img);
