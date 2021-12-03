@@ -26,7 +26,7 @@ function medicalEquipmentOl(medicalEquipmentName, medicalEquipmentObj) {
     var cards = document.createElement('div');
     cards.classList.add('cards');
     var card = document.createElement('a');
-    card.href = "./parens.js";
+    card.href = "";
     card.classList.add('card');
     var name = document.createElement('h2');
     name.classList.add('name');
@@ -50,7 +50,10 @@ function medicalEquipmentOl(medicalEquipmentName, medicalEquipmentObj) {
     pole.appendChild(medicalEquipment)
 
 
+    card.onclick = function() {
+        console.log('click');
 
+}
 
 };
     medicalEquipmentOl('medicalEquipment1', medicalEquipment1)
