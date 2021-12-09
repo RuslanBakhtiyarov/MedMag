@@ -50,10 +50,11 @@ function medicalEquipmentOl(medicalEquipmentName, medicalEquipmentObj) {
     pole.appendChild(medicalEquipment)
 
 
-    card.onclick = function() {
+    card.onclick = function transition() {
+        document.location.href = "./partner.html";
         console.log('click');
-
-}
+    }
+    
 
 };
     medicalEquipmentOl('medicalEquipment1', medicalEquipment1)
