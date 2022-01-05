@@ -31,3 +31,21 @@ body{
     width: 200px;
     height: 200px;
 }
+.parens{
+    display: flex;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.cardParens1{
+    display: flex;
+}
+.cardParens2{
+    display: flex;
+    margin-left: 50px;
+}
+
+.parensImg{
+    width: 200px;
+    height: 200px;
+}

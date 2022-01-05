@@ -26,7 +26,7 @@ function medicalEquipmentOl(medicalEquipmentName, medicalEquipmentObj) {
     var cards = document.createElement('div');
     cards.classList.add('cards');
     var card = document.createElement('a');
-    card.href = "";
+    card.href = "./partner.html";
     card.classList.add('card');
     var name = document.createElement('h2');
     name.classList.add('name');
@@ -52,9 +52,8 @@ function medicalEquipmentOl(medicalEquipmentName, medicalEquipmentObj) {
 
     card.onclick = function transition() {
         document.location.href = "./partner.html";
-        console.log('click');
+        
     }
-    
 
 };
     medicalEquipmentOl('medicalEquipment1', medicalEquipment1)
