@@ -27,7 +27,7 @@ function medicalEquipmentOl(medicalEquipmentName, medicalEquipmentObj) {
     cards.classList.add('cards');
     var card = document.createElement('a');
     card.href = "./partner.html";
-    card.classList.add('card');
+    card.classList.add('card1');
     var name = document.createElement('h2');
     name.classList.add('name');
     var price = document.createElement('p',);
@@ -44,6 +44,7 @@ function medicalEquipmentOl(medicalEquipmentName, medicalEquipmentObj) {
     card.appendChild(img);
     card.appendChild(name);
     card.appendChild(price);
+   
 
 
     var pole = document.querySelector('#pole');
