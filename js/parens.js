@@ -3,12 +3,12 @@ window.onload = function () {
     var cardParens1 = {
         name: 'небулайзер',
         price: 150,
-        img: src = "../image/parens/img0.jpeg"
+        img: src = "../image/parens/img0.jpeg",
     }
     var cardParens2 = {
         name: 'инголятор',
         price: 200,
-        img: src = "../image/parens/img2.jpeg"
+        img: src = "../image/parens/img2.jpeg",
     }
 
     function cardIngolyatorOl(cardIngolyatorName, cardIngolyatorObj) {

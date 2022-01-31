@@ -3,19 +3,19 @@ window.onload = function () {
 var medicalEquipment1 = {
     name: 'inhaler',
     price: 100,
-    img: src = "./image/ingolyator.webp"
+    img: src = "./image/ingolyator.webp",
         
 };
 var medicalEquipment2 = {
     name: 'tonometer',
     price: 120,
-    img:src = "./image/tonometr.webp"
+    img:src = "./image/tonometr.webp",
     
 };
 var medicalEquipment3 = {
     name: 'glucometer',
     price: 200,
-    img:src ="./image/Blood glucose meters.webp"
+    img:src ="./image/Blood glucose meters.webp",
     
 };
 
@@ -30,7 +30,7 @@ function medicalEquipmentOl(medicalEquipmentName, medicalEquipmentObj) {
     card1.classList.add('card1');
     var card2 = document.createElement('a');
     card2.href = "/"
-    card2.classList.add('capd2');
+    card2.classList.add("capd2");
     var name = document.createElement('h2');
     name.classList.add('name');
     var price = document.createElement('p',);
@@ -48,12 +48,13 @@ function medicalEquipmentOl(medicalEquipmentName, medicalEquipmentObj) {
     card1.appendChild(name);
     card1.appendChild(price);
 
-    medicalEquipment.appendChild(card2);
-    card2.appendChild(img);
-    card2.appendChild(name);
-    card2.appendChild(price);
-   
-
+    var getElement = function () {
+        medicalEquipment2.appendChild(card2);
+        card2.appendChild(img);
+        card2.appendChild(name);
+        card2.appendChild(price);
+    }
+    getElement()
 
     var pole = document.querySelector('#pole');
     pole.appendChild(medicalEquipment)
